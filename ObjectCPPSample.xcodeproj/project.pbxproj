@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		048E8FA51AF6B09F001FC9DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 048E8FA41AF6B09F001FC9DC /* main.m */; };
 		048E8FA81AF6B09F001FC9DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 048E8FA71AF6B09F001FC9DC /* AppDelegate.m */; };
-		048E8FAB1AF6B09F001FC9DC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048E8FAA1AF6B09F001FC9DC /* ViewController.m */; };
+		048E8FAB1AF6B09F001FC9DC /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 048E8FAA1AF6B09F001FC9DC /* ViewController.mm */; };
 		048E8FAE1AF6B09F001FC9DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048E8FAC1AF6B09F001FC9DC /* Main.storyboard */; };
 		048E8FB01AF6B09F001FC9DC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048E8FAF1AF6B09F001FC9DC /* Images.xcassets */; };
 		048E8FB31AF6B09F001FC9DC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048E8FB11AF6B09F001FC9DC /* LaunchScreen.xib */; };
 		048E8FBF1AF6B09F001FC9DC /* ObjectCPPSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 048E8FBE1AF6B09F001FC9DC /* ObjectCPPSampleTests.m */; };
+		048E8FCA1AF6B0DB001FC9DC /* SampleCPP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 048E8FC81AF6B0DB001FC9DC /* SampleCPP.cpp */; };
+		048E8FCD1AF6D61E001FC9DC /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 048E8FCC1AF6D61E001FC9DC /* opencv2.framework */; };
+		048E8FD01AF6D883001FC9DC /* wordgrain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 048E8FCF1AF6D883001FC9DC /* wordgrain.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,13 +36,17 @@
 		048E8FA61AF6B09F001FC9DC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		048E8FA71AF6B09F001FC9DC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		048E8FA91AF6B09F001FC9DC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		048E8FAA1AF6B09F001FC9DC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		048E8FAA1AF6B09F001FC9DC /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		048E8FAD1AF6B09F001FC9DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		048E8FAF1AF6B09F001FC9DC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		048E8FB21AF6B09F001FC9DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		048E8FB81AF6B09F001FC9DC /* ObjectCPPSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectCPPSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		048E8FBD1AF6B09F001FC9DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		048E8FBE1AF6B09F001FC9DC /* ObjectCPPSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectCPPSampleTests.m; sourceTree = "<group>"; };
+		048E8FC81AF6B0DB001FC9DC /* SampleCPP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SampleCPP.cpp; sourceTree = "<group>"; };
+		048E8FC91AF6B0DB001FC9DC /* SampleCPP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleCPP.h; sourceTree = "<group>"; };
+		048E8FCC1AF6D61E001FC9DC /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		048E8FCF1AF6D883001FC9DC /* wordgrain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wordgrain.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				048E8FCD1AF6D61E001FC9DC /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +71,9 @@
 		048E8F961AF6B09F001FC9DC = {
 			isa = PBXGroup;
 			children = (
+				048E8FD11AF6D948001FC9DC /* CPPFiles */,
+				048E8FCE1AF6D843001FC9DC /* SampleImages */,
+				048E8FCB1AF6D59E001FC9DC /* Frameworks */,
 				048E8FA11AF6B09F001FC9DC /* ObjectCPPSample */,
 				048E8FBB1AF6B09F001FC9DC /* ObjectCPPSampleTests */,
 				048E8FA01AF6B09F001FC9DC /* Products */,
@@ -84,7 +95,7 @@
 				048E8FA61AF6B09F001FC9DC /* AppDelegate.h */,
 				048E8FA71AF6B09F001FC9DC /* AppDelegate.m */,
 				048E8FA91AF6B09F001FC9DC /* ViewController.h */,
-				048E8FAA1AF6B09F001FC9DC /* ViewController.m */,
+				048E8FAA1AF6B09F001FC9DC /* ViewController.mm */,
 				048E8FAC1AF6B09F001FC9DC /* Main.storyboard */,
 				048E8FAF1AF6B09F001FC9DC /* Images.xcassets */,
 				048E8FB11AF6B09F001FC9DC /* LaunchScreen.xib */,
@@ -117,6 +128,31 @@
 				048E8FBD1AF6B09F001FC9DC /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		048E8FCB1AF6D59E001FC9DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				048E8FCC1AF6D61E001FC9DC /* opencv2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		048E8FCE1AF6D843001FC9DC /* SampleImages */ = {
+			isa = PBXGroup;
+			children = (
+				048E8FCF1AF6D883001FC9DC /* wordgrain.jpg */,
+			);
+			name = SampleImages;
+			sourceTree = "<group>";
+		};
+		048E8FD11AF6D948001FC9DC /* CPPFiles */ = {
+			isa = PBXGroup;
+			children = (
+				048E8FC81AF6B0DB001FC9DC /* SampleCPP.cpp */,
+				048E8FC91AF6B0DB001FC9DC /* SampleCPP.h */,
+			);
+			name = CPPFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				048E8FAE1AF6B09F001FC9DC /* Main.storyboard in Resources */,
+				048E8FD01AF6D883001FC9DC /* wordgrain.jpg in Resources */,
 				048E8FB31AF6B09F001FC9DC /* LaunchScreen.xib in Resources */,
 				048E8FB01AF6B09F001FC9DC /* Images.xcassets in Resources */,
 			);
@@ -219,9 +256,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				048E8FAB1AF6B09F001FC9DC /* ViewController.m in Sources */,
+				048E8FAB1AF6B09F001FC9DC /* ViewController.mm in Sources */,
 				048E8FA81AF6B09F001FC9DC /* AppDelegate.m in Sources */,
 				048E8FA51AF6B09F001FC9DC /* main.m in Sources */,
+				048E8FCA1AF6B0DB001FC9DC /* SampleCPP.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +383,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ObjectCPPSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,6 +397,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ObjectCPPSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

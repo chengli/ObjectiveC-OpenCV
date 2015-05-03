@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SampleCPP.h"
+#import <opencv2/opencv.hpp>
 
 @interface ViewController : UIViewController
-
 
 @end
 
